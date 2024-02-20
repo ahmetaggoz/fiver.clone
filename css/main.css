@@ -25,6 +25,23 @@ header {
       align-items: center;
       list-style: none;
       gap: 30px; }
+      header .navbar .menu-links .language-item a {
+        display: flex;
+        gap: 8px;
+        align-items: center; }
+      header .navbar .menu-links .language-item span {
+        font-size: 1.3rem; }
       header .navbar .menu-links a {
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: .2s ease; }
+        header .navbar .menu-links a:hover {
+          color: #19a463; }
+      header .navbar .menu-links .join-btn a {
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 8px 15px; }
+        header .navbar .menu-links .join-btn a:hover {
+          color: #fff;
+          background: #19a463;
+          border-color: transparent; }

@@ -2,6 +2,7 @@
 
 $bg-color:#1B1B1D;
 $white:#fff;
+$link: #19a463;
 
 * {
     margin:0;
@@ -36,10 +37,38 @@ header {
             list-style: none;
             gap:30px;
 
-
+            .language-item{
+                a{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                }
+                span{
+                    font-size: 1.3rem;
+                }
+            }
             a{
                 color: $white;
                 text-decoration: none;
+                transition: .2s ease;
+
+                &:hover{
+                    color: $link;
+                }
+            }
+
+            .join-btn {
+                a{
+                    border: 1px solid $white;
+                    border-radius: 4px;
+                    padding: 8px 15px;
+
+                    &:hover{
+                        color: $white;
+                        background: $link;
+                        border-color: transparent;
+                    }
+                }
             }
         }
     }
